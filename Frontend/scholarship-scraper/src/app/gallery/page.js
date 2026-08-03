@@ -25,20 +25,21 @@ export default function Gallery() {
       <main className="flex-grow">
         <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." />
 
-        <div className="max-w-6xl mx-auto py-12 px-4">
-        <div className="flex items-center justify-between mb-8">
-          <h2 className="text-2xl md:text-4xl font-bold">Gallery</h2>
-          <Link href="/" className="text-sm text-blue-600 hover:underline">Back to Home</Link>
-        </div>
+        <div className="max-w-6xl mx-auto py-6 px-4">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl md:text-4xl font-bold">Gallery</h2>
+            <Link href="/" className="text-sm text-blue-600 hover:underline">Back to Home</Link>
+          </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((src) => (
-            <div key={src} className="bg-white rounded shadow overflow-hidden">
-              <img src={src} alt="gallery" className="w-full h-64 object-cover" />
-            </div>
-          ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            {images.map((src) => (
+              <div key={src} className="bg-white rounded shadow overflow-hidden">
+                <img src={src} alt="gallery" className="w-full h-64 object-cover" />
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </main>
 
       <Footer />
     </div>
