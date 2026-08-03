@@ -2,6 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Space_Grotesk } from "next/font/google";
+
+const space = Space_Grotesk({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-space-grotesk" });
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -9,12 +12,12 @@ export default function Navbar() {
   return (
     <header className="bg-gradient-to-r from-blue-900 to-green-600 text-white">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="/" className="flex items-center gap-3">
+        <Link href="/" className={`flex items-center gap-3 ${space.className}`}>
           <Image src="/nsbe-logo.png" alt="NSBE Logo" width={48} height={48} className="drop-shadow-md" />
           <span className="font-bold text-lg">Penn State NSBE</span>
         </Link>
 
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className={`hidden md:flex items-center gap-6 ${space.className}`}>
           <Link href="/" className="hover:underline">Home</Link>
           <Link href="/about" className="hover:underline">About</Link>
           <Link href="/membership" className="hover:underline">Membership</Link>
@@ -34,7 +37,7 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-blue-800/80 px-4 pb-4">
+        <div className={`md:hidden bg-blue-800/80 px-4 pb-4 ${space.className}`}>
           <nav className="flex flex-col gap-2">
             <Link href="/" className="block py-2">Home</Link>
             <Link href="/about" className="block py-2">About</Link>
