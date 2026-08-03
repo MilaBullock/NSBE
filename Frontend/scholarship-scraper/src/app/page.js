@@ -16,6 +16,12 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
+          <div className="z-10 w-full max-w-3xl text-center px-4">
+            <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
+              Penn State Chapter of the National Society of Black Engineers
+            </h1>
+          </div>
+
         </main>
 
         <Footer />
