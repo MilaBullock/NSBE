@@ -32,7 +32,7 @@ export default function RootLayout({ children }) {
         <GoogleMapsProvider>
           <Navbar />
 
-          <main className="flex-grow">{children}</main>
+          <main className="flex-grow overflow-y-auto">{children}</main>
 
           <Footer />
         </GoogleMapsProvider>
