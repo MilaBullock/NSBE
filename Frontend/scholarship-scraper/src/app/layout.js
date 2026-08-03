@@ -1,5 +1,7 @@
 import GoogleMapsProvider from "./components/GoogleMapsProvider";
 import localFont from "next/font/local";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -23,12 +25,17 @@ export const metadata = {
   ],
 };
 
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <GoogleMapsProvider>{children}</GoogleMapsProvider>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
+        <GoogleMapsProvider>
+          <Navbar />
+
+          <main className="flex-grow">{children}</main>
+
+          <Footer />
+        </GoogleMapsProvider>
       </body>
     </html>
   );
