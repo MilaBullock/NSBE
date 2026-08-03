@@ -18,12 +18,12 @@ export default function Navbar() {
         </Link>
 
         <nav className={`hidden md:flex items-center gap-6 ${space.className}`}>
-          <Link href="/" className="hover:underline">Home</Link>
-          <Link href="/about" className="hover:underline">About</Link>
-          <Link href="/membership" className="hover:underline">Membership</Link>
-          <Link href="/donate" className="hover:underline">Donate</Link>
-          <Link href="/contact" className="hover:underline">Contact</Link>
-          <Link href="/events" className="hover:underline">Events</Link>
+          <Link href="/" className="font-bold hover:underline">Home</Link>
+          <Link href="/about" className="font-bold hover:underline">About</Link>
+          <Link href="/membership" className="font-bold hover:underline">Membership</Link>
+          <Link href="/donate" className="font-bold hover:underline">Donate</Link>
+          <Link href="/contact" className="font-bold hover:underline">Contact</Link>
+          <Link href="/events" className="font-bold hover:underline">Events</Link>
         </nav>
 
         <div className="md:hidden">
@@ -39,12 +39,12 @@ export default function Navbar() {
       {open && (
         <div className={`md:hidden bg-blue-800/80 px-4 pb-4 ${space.className}`}>
           <nav className="flex flex-col gap-2">
-            <Link href="/" className="block py-2">Home</Link>
-            <Link href="/about" className="block py-2">About</Link>
-            <Link href="/membership" className="block py-2">Membership</Link>
-            <Link href="/donate" className="block py-2">Donate</Link>
-            <Link href="/contact" className="block py-2">Contact</Link>
-            <Link href="/events" className="block py-2">Events</Link>
+            <Link href="/" className="block py-2 font-bold">Home</Link>
+            <Link href="/about" className="block py-2 font-bold">About</Link>
+            <Link href="/membership" className="block py-2 font-bold">Membership</Link>
+            <Link href="/donate" className="block py-2 font-bold">Donate</Link>
+            <Link href="/contact" className="block py-2 font-bold">Contact</Link>
+            <Link href="/events" className="block py-2 font-bold">Events</Link>
           </nav>
         </div>
       )}
