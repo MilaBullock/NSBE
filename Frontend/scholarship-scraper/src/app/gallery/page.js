@@ -22,11 +22,10 @@ export default function Gallery() {
     <div className="min-h-screen bg-gray-100">
       <Navbar />
 
-      <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." />
+      <main className="flex-grow">
+        <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." />
 
-      <div className="h-16 md:h-20" />
-
-      <div className="max-w-6xl mx-auto py-12 px-4">
+        <div className="max-w-6xl mx-auto py-12 px-4">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl md:text-4xl font-bold">Gallery</h2>
           <Link href="/" className="text-sm text-blue-600 hover:underline">Back to Home</Link>
