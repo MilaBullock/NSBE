@@ -14,6 +14,10 @@
   }
 }
 
+html, body, #__next {
+  height: 100%;
+}
+
 body {
   color: var(--foreground);
   background: #f3f4f6; /* Tailwind gray-100 */
@@ -21,3 +25,5 @@ body {
   margin: 0;
   padding: 0;
 }
+
+section { margin: 0; }
