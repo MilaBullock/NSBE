@@ -2,9 +2,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Space_Grotesk } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
-const space = Space_Grotesk({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-space-grotesk" });
+const mont = Montserrat({ subsets: ["latin"], weight: ["400", "600", "700"], variable: "--font-montserrat" });
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,18 +12,18 @@ export default function Navbar() {
   return (
     <header className="bg-gradient-to-r from-blue-900 to-green-600 text-white">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-        <Link href="/" className={`flex items-center gap-3 ${space.className}`}>
+        <Link href="/" className={`flex items-center gap-3 ${mont.className}`}>
           <Image src="/nsbe-logo.png" alt="NSBE Logo" width={48} height={48} className="drop-shadow-md" />
-          <span className="font-bold text-lg">Penn State NSBE</span>
+          <span className="font-bold text-lg uppercase tracking-widest">Penn State NSBE</span>
         </Link>
 
-        <nav className={`hidden md:flex items-center gap-6 ${space.className}`}>
-          <Link href="/" className="font-bold hover:underline">Home</Link>
-          <Link href="/about" className="font-bold hover:underline">About</Link>
-          <Link href="/membership" className="font-bold hover:underline">Membership</Link>
-          <Link href="/donate" className="font-bold hover:underline">Donate</Link>
-          <Link href="/contact" className="font-bold hover:underline">Contact</Link>
-          <Link href="/events" className="font-bold hover:underline">Events</Link>
+        <nav className={`hidden md:flex items-center gap-6 ${mont.className}`}>
+          <Link href="/" className="font-bold uppercase tracking-widest hover:underline">Home</Link>
+          <Link href="/about" className="font-bold uppercase tracking-widest hover:underline">About</Link>
+          <Link href="/membership" className="font-bold uppercase tracking-widest hover:underline">Membership</Link>
+          <Link href="/donate" className="font-bold uppercase tracking-widest hover:underline">Donate</Link>
+          <Link href="/contact" className="font-bold uppercase tracking-widest hover:underline">Contact</Link>
+          <Link href="/events" className="font-bold uppercase tracking-widest hover:underline">Events</Link>
         </nav>
 
         <div className="md:hidden">
@@ -37,14 +37,14 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className={`md:hidden bg-blue-800/80 px-4 pb-4 ${space.className}`}>
+        <div className={`md:hidden bg-blue-800/80 px-4 pb-4 ${mont.className}`}>
           <nav className="flex flex-col gap-2">
-            <Link href="/" className="block py-2 font-bold">Home</Link>
-            <Link href="/about" className="block py-2 font-bold">About</Link>
-            <Link href="/membership" className="block py-2 font-bold">Membership</Link>
-            <Link href="/donate" className="block py-2 font-bold">Donate</Link>
-            <Link href="/contact" className="block py-2 font-bold">Contact</Link>
-            <Link href="/events" className="block py-2 font-bold">Events</Link>
+            <Link href="/" className="block py-2 font-bold uppercase tracking-widest">Home</Link>
+            <Link href="/about" className="block py-2 font-bold uppercase tracking-widest">About</Link>
+            <Link href="/membership" className="block py-2 font-bold uppercase tracking-widest">Membership</Link>
+            <Link href="/donate" className="block py-2 font-bold uppercase tracking-widest">Donate</Link>
+            <Link href="/contact" className="block py-2 font-bold uppercase tracking-widest">Contact</Link>
+            <Link href="/events" className="block py-2 font-bold uppercase tracking-widest">Events</Link>
           </nav>
         </div>
       )}
