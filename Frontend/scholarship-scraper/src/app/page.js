@@ -20,6 +20,10 @@ export default function Home() {
             <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
               Penn State Chapter of the National Society of Black Engineers
             </h1>
+
+            <div className="mt-6">
+              <Link href="/gallery" className="inline-block bg-yellow-300 text-black font-semibold uppercase tracking-wider px-6 py-3 rounded shadow hover:opacity-90">View Gallery</Link>
+            </div>
           </div>
 
         </main>
