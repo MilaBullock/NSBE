@@ -20,9 +20,9 @@ export default function Navbar() {
           <Link href="/" className="font-bold uppercase tracking-widest hover:underline">Home</Link>
           <Link href="/about" className="font-bold uppercase tracking-widest hover:underline">About</Link>
           <Link href="/membership" className="font-bold uppercase tracking-widest hover:underline">Membership</Link>
+          <Link href="/events" className="font-bold uppercase tracking-widest hover:underline">Events</Link>
           <Link href="/donate" className="font-bold uppercase tracking-widest hover:underline">Donate</Link>
           <Link href="/contact" className="font-bold uppercase tracking-widest hover:underline">Contact</Link>
-          <Link href="/events" className="font-bold uppercase tracking-widest hover:underline">Events</Link>
         </nav>
 
         <div className="md:hidden">
@@ -41,9 +41,9 @@ export default function Navbar() {
             <Link href="/" className="block py-2 font-bold uppercase tracking-widest">Home</Link>
             <Link href="/about" className="block py-2 font-bold uppercase tracking-widest">About</Link>
             <Link href="/membership" className="block py-2 font-bold uppercase tracking-widest">Membership</Link>
+            <Link href="/events" className="block py-2 font-bold uppercase tracking-widest">Events</Link>
             <Link href="/donate" className="block py-2 font-bold uppercase tracking-widest">Donate</Link>
             <Link href="/contact" className="block py-2 font-bold uppercase tracking-widest">Contact</Link>
-            <Link href="/events" className="block py-2 font-bold uppercase tracking-widest">Events</Link>
           </nav>
         </div>
       )}
