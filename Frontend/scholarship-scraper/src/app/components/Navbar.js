@@ -10,7 +10,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="bg-black/60 backdrop-blur-sm text-white">
+    <header className="fixed top-0 left-0 w-full bg-black/60 backdrop-blur-sm text-white z-50">
       <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
         <Link href="/" className={`flex items-center gap-3 ${mont.className}`} aria-label="Home">
           <Image src="/nsbe-logo.png" alt="NSBE Logo" width={48} height={48} className="drop-shadow-md" />

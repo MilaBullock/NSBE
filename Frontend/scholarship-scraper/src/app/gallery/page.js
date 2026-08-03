@@ -1,4 +1,7 @@
 import Link from 'next/link';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import Hero from '../components/Hero';
 
 export default function Gallery() {
   const images = [
@@ -16,10 +19,16 @@ export default function Gallery() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-100 py-12 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+
+      <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." />
+
+      <div className="h-16 md:h-20" />
+
+      <div className="max-w-6xl mx-auto py-12 px-4">
         <div className="flex items-center justify-between mb-8">
-          <h1 className="text-2xl md:text-4xl font-bold">Gallery</h1>
+          <h2 className="text-2xl md:text-4xl font-bold">Gallery</h2>
           <Link href="/" className="text-sm text-blue-600 hover:underline">Back to Home</Link>
         </div>
 
@@ -31,6 +40,8 @@ export default function Gallery() {
           ))}
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

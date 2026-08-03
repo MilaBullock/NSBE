@@ -2,7 +2,7 @@ export default function Hero({ title, subtitle, image = '/chicago-night.jpg', ch
   return (
     <section className="w-full">
       <div
-        className="relative w-full bg-cover bg-center"
+        className="relative w-full bg-cover bg-center min-h-screen"
         style={{ backgroundImage: `url('${image}')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
