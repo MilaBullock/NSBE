@@ -3,7 +3,7 @@ import Hero from './components/Hero';
 
 export default function Home() {
   return (
-    <Hero title="Penn State Chapter of the National Society of Black Engineers" image="/chicago-night.jpg">
+    <Hero title="Penn State Chapter of the National Society of Black Engineers" image="/chicago-night.jpg" heightClass="min-h-[calc(100vh-4rem)]" contentClass="relative z-10 flex items-center justify-center h-full pt-40 pb-0">
       <div>
         <p className="text-gray-200">Add short welcome message here.</p>
       </div>

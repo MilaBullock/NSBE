@@ -30,7 +30,7 @@ export default function Gallery() {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {images.map((src) => (
               <div key={src} className="bg-white rounded shadow overflow-hidden">
-                <img src={src} alt="gallery" className="w-full h-64 object-cover" />
+                <img src={src} alt="gallery" className="w-full h-56 object-cover" />
               </div>
             ))}
           </div>

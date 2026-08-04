@@ -1,14 +1,21 @@
 import Hero from '../components/Hero';
+import InstagramFeed from '../components/InstagramFeed';
 
-export default function Events() {
+export const dynamic = 'force-dynamic';
+
+export default async function Events() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
-      <Hero title="Events" image="/brochure/7.png" subtitle="Upcoming chapter events and activities." />
+      <Hero title="Events" image="/brochure/7.png" subtitle="Upcoming chapter events, activities and conference announcements." heightClass="min-h-[40vh] md:min-h-[48vh]" />
 
       <main className="flex-grow">
-        <div className="max-w-4xl mx-auto py-6 px-4">
-          <h2 className="text-2xl md:text-3xl font-bold mb-4">Events</h2>
-          <p className="text-gray-700">List upcoming chapter events here.</p>
+        <div className="max-w-6xl mx-auto py-8 px-4 sm:px-6 lg:px-8 space-y-8">
+          <div className="text-center mx-auto max-w-3xl">
+
+            
+          </div>
+
+          <InstagramFeed />
         </div>
       </main>
     </div>

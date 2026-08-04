@@ -1,4 +1,3 @@
-import GoogleMapsProvider from "./components/GoogleMapsProvider";
 import localFont from "next/font/local";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -29,13 +28,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}>
-        <GoogleMapsProvider>
           <Navbar />
 
           <main className="flex-grow overflow-y-auto">{children}</main>
 
           <Footer />
-        </GoogleMapsProvider>
       </body>
     </html>
   );
