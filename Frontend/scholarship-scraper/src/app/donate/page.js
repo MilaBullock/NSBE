@@ -3,7 +3,7 @@ import Hero from '../components/Hero';
 export default function Donate() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
-      <Hero title="Donate" image="/brochure/5.png" subtitle="Support our chapter" />
+      <Hero title="Donate" image="/brochure/5.png" subtitle="Support our chapter" heightClass="min-h-[45vh]" contentClass="relative z-10 flex items-center justify-center h-full pt-32 pb-0" />
 
       <main className="flex-grow">
         <div className="max-w-4xl mx-auto py-6 px-4">

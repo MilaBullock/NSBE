@@ -1,9 +1,10 @@
 export default function Hero({ title, subtitle, image = '/chicago-night.jpg', children, heightClass, fontClass, contentClass }) {
-  const height = heightClass || 'min-h-[calc(100vh-4rem)]';
+  // Default to a medium header height (larger than About's 35vh but smaller than full viewport)
+  const height = heightClass || 'min-h-[45vh]';
   return (
     <section className="w-full">
       <div
-        className={`relative w-full bg-cover bg-center ${height}`}
+        className={`relative w-full bg-gray-900 bg-cover bg-center ${height}`}
         style={{ backgroundImage: `url('${image}')` }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>

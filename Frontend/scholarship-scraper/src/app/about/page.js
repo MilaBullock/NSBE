@@ -33,7 +33,7 @@ const execBoard = [
 export default function About() {
   return (
     <div className="min-h-screen flex flex-col bg-gray-100">
-      <Hero title="About" image="/brochure/2.png" subtitle="Learn more about our chapter." heightClass="min-h-[35vh]" fontClass={mont.className} />
+      <Hero title="About" image="/brochure/2.png" subtitle="Learn more about our chapter." heightClass="min-h-[45vh]" contentClass="relative z-10 flex items-center justify-center h-full pt-32 pb-0" fontClass={mont.className} />
 
       <main className="flex-grow">
         <div className="w-full max-w-6xl mx-auto py-8 px-2 text-center">
@@ -50,9 +50,13 @@ export default function About() {
 
           <section className="mt-10 text-center">
             <h3 className={`text-2xl md:text-3xl font-bold mb-6 text-black ${mont.className}`}>Executive Board</h3>
-            <div className="flex flex-wrap justify-center gap-6">
-              {execBoard.map((m, idx) => (
-                <ExecCard key={idx} photo={m.photo} name={m.name} position={m.position} major={m.major} year={m.year} linkedin={m.linkedin} />
+            <div className="flex flex-col gap-6">
+              {Array.from({ length: Math.ceil(execBoard.length / 5) }, (_, rowIndex) => (
+                <div key={rowIndex} className="flex flex-wrap justify-center gap-6">
+                  {execBoard.slice(rowIndex * 5, rowIndex * 5 + 5).map((m, idx) => (
+                    <ExecCard key={`${rowIndex}-${idx}`} photo={m.photo} name={m.name} position={m.position} major={m.major} year={m.year} linkedin={m.linkedin} />
+                  ))}
+                </div>
               ))}
             </div>
           </section>

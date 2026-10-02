@@ -18,7 +18,7 @@ export default function Gallery() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." />
+      <Hero title="Gallery" image="/brochure/1.png" subtitle="Photos and highlights from our chapter." heightClass="min-h-[45vh]" contentClass="relative z-10 flex items-center justify-center h-full pt-32 pb-0" />
 
       <main className="flex-grow">
         <div className="max-w-6xl mx-auto py-6 px-4">

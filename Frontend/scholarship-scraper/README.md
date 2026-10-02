@@ -1,22 +1,39 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+## Getting Started (Run locally)
 
-First, run the development server:
+Follow these steps to run the frontend and view the site in your browser.
+
+1. Install dependencies
+
+```bash
+cd Frontend/scholarship-scraper
+npm install
+```
+
+2. Start the development server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Open the site
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open your browser and visit `http://localhost:3000`.
+
+To visit a specific route (for example the About page) go to `http://localhost:3000/about`.
+
+Troubleshooting:
+
+- If port 3000 is already in use, run on another port:
+
+```bash
+PORT=3001 npm run dev
+```
+
+- If the dev server fails to bind when started from an editor-integrated/sandboxed terminal, run the `npm run dev` command from a regular system terminal (Terminal.app or iTerm) or allow the process to bind to the local network.
+
+- Stop the dev server with `Ctrl+C` in the terminal.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
